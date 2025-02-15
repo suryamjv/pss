@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="welcome">
+        <h1>Happy Valentine's Day ❤️</h1>
+        <p>Hey Love, I have a special surprise for you!</p>
+        <button onclick="showSection('proposal')">Click to Open</button>
+    </div>
+
+    <div id="proposal" class="hidden">
+        <h2>Will You Be Mine Forever? 💍</h2>
+        <button onclick="showSection('wish')">Yes! 💖</button>
+        <button onclick="alert('Oh no! Modda gudu! 💔')">No 😢</button>
+    </div>
+
+    <div id="wish" class="hidden">
+        <h2>My Love for You is Endless! 💕</h2>
+        <p>On this day of love, I want you to know that you're the one I dream of, the one I think of, and the one I love more than anything in this world. Happy Valentine's Day, my darling!</p>
+        <button onclick="showSection('surprise')">Next Surprise 🎁</button>
+    </div>
+
+    <div id="surprise" class="hidden">
+        <h2>Surprise! 🎉</h2>
+        <p>LOVE YOU BANGRAM </p>
+        <div class="hearts" onclick="startAnimation()">
+            ❤️ ❤️ ❤️ ❤️ ❤️
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

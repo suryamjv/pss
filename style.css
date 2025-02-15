@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: pink;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.hidden {
+    display: none;
+}
+
+#proposal, #wish, #surprise {
+    margin-top: 50px;
+}
+
+.hearts {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@keyframes floatHearts {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.animate {
+    animation: floatHearts 2s infinite;
+}
